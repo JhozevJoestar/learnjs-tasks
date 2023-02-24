@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+      for (let i = 2; i <= 10; i++) {
+
+        let Prime = true;
+        for (let x = 2; x <= i; x++) {
+            if (i%x===0 && x!==i) {
+                Prime = false;
+            }
+        }
+        if (Prime === true) {
+                    alert(i);
+        }
+        }
+  </script>
+</body>
+</html>

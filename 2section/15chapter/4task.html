@@ -1,0 +1,17 @@
+
+function pow(x, n) {
+    let res = x;
+    for (let i = 1; i < n; i++) {
+      res *= x;
+    }
+    return res;
+  }
+
+let x = prompt("1 число", '');
+let n = prompt("2 число", '');
+
+if (n <= 0) {
+  alert("Введите положительное число");
+} else {
+  alert(pow(x, n));
+}
